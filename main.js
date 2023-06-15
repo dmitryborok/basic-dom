@@ -53,3 +53,24 @@ function clickDown() {
         b.style.top = `${newPos}px`;
     }
 }
+
+const keyProcess=function(event) {
+    switch (event.key) {
+        case "ArrowUp":
+            event.preventDefault();
+            clickUp();
+            break;
+        case "ArrowDown":
+            event.preventDefault();
+            clickDown();
+            break;
+        case "ArrowRight":
+            event.preventDefault();
+            clickRight();
+            break;
+        case "ArrowLeft":
+            event.preventDefault();
+            clickLeft();
+            break;
+    }
+}
